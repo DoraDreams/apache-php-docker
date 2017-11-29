@@ -130,12 +130,7 @@ RUN \
     pkg-config \
     re2c &&\
 
-    rm -r /var/lib/apt/lists/* && \
-
-    chmod 755 /opt/ci123/apache-2.4/modules/libphp5.so && \
-    chmod 644 /opt/ci123/apache-2.4/lib/libaprutil-1.a && \
-    chmod 644 /opt/ci123/apache-2.4/lib/libapr-1.a
-
+    rm -r /var/lib/apt/lists/* 
 
 
 EXPOSE 80 88 443
