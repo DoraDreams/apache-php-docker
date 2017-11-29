@@ -108,7 +108,7 @@ RUN buildDeps=' \
 FROM phusion/baseimage
 MAINTAINER Chao Hu <huchao95@corp-ci.com>
 
-COPY --from=build-dev /opt/ci123/apache2.4 /opt/ci123/apache2.4
+COPY --from=build-dev /opt/ci123/apache-2.4 /opt/ci123/apache2.4
 COPY --from=build-dev /opt/ci123/php /opt/ci123/php
 
 
